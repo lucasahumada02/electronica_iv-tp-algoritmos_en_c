@@ -11,9 +11,9 @@
 int32_t suma(int32_t A,int32_t B)
 {
     // reemplazar el código de abajo con la solución
-    (void)A;
-    (void)B;
-    return 0;
+    int suma;
+    suma = A + B;
+    return suma;
 }
 
 /**
@@ -26,9 +26,13 @@ int32_t suma(int32_t A,int32_t B)
 int64_t sumatoria(int32_t n,const int32_t *b)
 {
     // reemplazar el código de abajo con la solución
-    (void)n;
-    (void)b;
-    return 0;
+    int a=0, i=0;
+    while (i<n)
+    {
+        a=a+b[i];
+        i++;
+    }
+    return a;
 }
 
 /**
@@ -41,9 +45,23 @@ int64_t sumatoria(int32_t n,const int32_t *b)
 int32_t posicion_maximo(int32_t n,const int32_t *b)
 {
     // reemplazar el código de abajo con la solución
-    (void)n;
-    (void)b;
-    return 0;
+    int t=0,m,i;
+    if (n>1)
+    {
+        m=b[t];
+        i=1;
+        while (i<n)
+        {
+            if (m<b[i])
+            {
+                m=b[i];
+                t=i;
+            }
+            i++;
+        }
+        
+    }
+    return t;
 }
 
 /**
@@ -57,7 +75,15 @@ int32_t posicion_maximo(int32_t n,const int32_t *b)
  */
 void ordenar_en_sitio_menor_a_mayor(int32_t n,int32_t *b)
 {
-    // reemplazar el código de abajo con la solución
-    (void)n;
-    (void)b;
+    int t=n-1,aux;
+    int32_t i;
+    while (t>0)
+    {
+        i=posicion_maximo(t+1,b);
+        aux=b[t];
+        b[t]=b[i];
+        b[i]=aux;
+        t--;
+    }
+ return t;   
 }

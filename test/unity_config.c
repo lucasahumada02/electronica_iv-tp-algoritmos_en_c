@@ -3,7 +3,7 @@
 
 #include "unity_config.h"
 #include <stm32f1xx.h>
-
+#include "timer_sistema.h"
 
 #define PIN_CNF_AFO_PP (0b10)
 #define PIN_MOD_LS (0b10)
@@ -26,6 +26,10 @@ void unityOutputStart(void)
     USART1->CR2 = (USART1->CR2 & ~(USART_CR2_STOP)) | (USART_STOP_1 << USART_CR2_STOP_Pos) ;
     USART1->BRR = (SystemCoreClock*USART_BRR_FIXP_FACTOR) / (115200*USART_BRR_OVERSAMPLE);
     USART1->CR1 |= USART_CR1_TE;
+#ifdef ESPERA_PRUEBAS
+    TS_init();
+    TS_espera(ESPERA_PRUEBAS);
+#endif
 }
 
 void unityOutputChar(char c)
