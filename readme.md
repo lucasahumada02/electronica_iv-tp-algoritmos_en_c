@@ -1,18 +1,17 @@
-# Electrónica IV. Trabajo práctico 2. Reimplementación de TP 1 en C
+# Electrónica IV - TP - Algoritmos en lenguaje C
 
-En este práctico deberás implementar los mismos algoritmos que el TP 1 (repetidos por conveniencia) en lenguaje C. Alternativamente puedes usar *otros algortimos para la misma tarea* (los algoritmos dados no son especialmente eficientes).
+Modalidad: individual Plazo de entrega: 1 semana
+
+En este práctico deberás implementar los mismos algoritmos que el *Algoritmos en Ensamblador Cortex-M3* (repetidos por conveniencia) en lenguaje C. Alternativamente puedes usar *otros algortimos para la misma tarea* (los algoritmos dados no son especialmente eficientes).
 
 Antes de comenzar asegúrate de lo siguiente:
 
-- Han realizado el [TP1][eiv23-tp1]
-- Todos los miembros de tu equipo tienen cuenta en GitHub
-- El encargado de mantener los repositorios del equipo ha clonado [el repositorio de este práctico][eiv23-tp2]
-- Todos los miembros del equipo tienen acceso de escritura al repositorio del equipo para este práctico.
-- Todos los miembros del equipo que cuentan con PC han instalado las herramientas (ver [TP1][eiv23-tp1] por detalles)
+- Han realizado el [trabajo práctico de algoritmos en ensamblador][electronica_iv-tp-algoritmos_en_ensamblador]
+- Has clonado [el repositorio de este práctico][electronica_iv-tp-algoritmos_en_c]
 
 ## Implementación de algoritmos
 
-Para completar este práctico deberás implementar los algoritmos del TP1 u otros equivalentes en lenguaje C. Al igual que en el práctico anterior, tu código será una parte de un programa mayor que lo ejecutará y comprobará sus resultados. El archivo `lib\practico\practico.c` contiene una plantilla que deberás completar con tu solución.
+Para completar este práctico deberás implementar los algoritmos del práctico *Algoritmos en Ensamblador* u otros equivalentes en lenguaje C. Al igual que en el práctico anterior, tu código será una parte de un programa mayor que lo ejecutará y comprobará sus resultados. El archivo `lib\practico\practico.c` contiene una plantilla que deberás completar con tu solución.
 
 ### Suma (suma)
 
@@ -59,8 +58,8 @@ Nota: La emulación es limitada, el debugger no tiene acceso a los periféricos 
 
 Una referencia en línea de lenguaje C es [la parte de lenguaje C del sitio cppreference, versión en español][cppreference_c_es]. El compilador GCC soporta al menos C99 con algunas extensiones. Nota: No todo el sitio está actualmente traducido. Si hay algo que no encuentras puedes consultar [la versión en inglés][cppreference_c].
 
-[eiv23-tp1]: https://github.com/fmirandabonomi/eiv23-tp1
-[eiv23-tp2]: https://github.com/fmirandabonomi/eiv23-tp2
+[electronica_iv-tp-algoritmos_en_ensamblador]: https://github.com/fmirandabonomi/electronica_iv-tp-algoritmos_en_ensamblador
+[electronica_iv-tp-algoritmos_en_c]: https://github.com/fmirandabonomi/electronica_iv-tp-algoritmos_en_c
 [cppreference_c_es]: https://es.cppreference.com/w/c
 [cppreference_c]: https://en.cppreference.com/w/c
 [fig_suma]: suma.png
