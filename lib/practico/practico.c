@@ -85,5 +85,4 @@ void ordenar_en_sitio_menor_a_mayor(int32_t n,int32_t *b)
         b[i]=aux;
         t--;
     }
- return t;   
 }
